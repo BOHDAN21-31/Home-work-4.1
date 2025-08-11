@@ -11,7 +11,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 36px 0 0;
+    padding: 36px 0 137px;
 }
 .header__box {
     display: flex;
@@ -67,8 +67,13 @@ body {
 .offer  {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 230px;
+    background: url("../photo/man-bg.png") 100% 100% no-repeat;
+
 }
 .offer__holder {
+    background: url("../photo/blye-circle.svg") 100% 100% no-repeat;
     width: 640px;
 }
 .offer__title {
@@ -103,40 +108,71 @@ body {
 }
 .offer__social {
     list-style: none;
+    align-self: flex-end;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    position: relative;
+    background: url("../photo/blue_background.png") 100% 100% no-repeat;");
 }
 
 .offer__social li {
     display: inline-block;
     border: 2px solid #000;
-    padding: 8px 14px;
+    padding: 16px 26px;
     font-weight: 600;
     font-family: sans-serif;
     font-size: 16px;
     text-align: center;
-    background: #fff;
     cursor: default;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
-.offer__social li:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.offer__item {
+    position: absolute;
+    border: 2px solid #000;
+    padding: 16px 36px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+.offer__Marketer {
+    top: -550px;
+    right: 135px;
+}
+.offer__Illustrator {
+    top: -600px;
+    right: 320px;
+}
+.offer__Animator {
+    top: -570px;
+    right: 530px;
+}
+.offer__Programmer {
+    top: -390px;
+    right: 690px;
+}
+.offer__Designer {
+    top: -220px;
+    right: 860px;
+}
+.offer__Photographer {
+    top: -50px;
+    right: 710px;
 }
 .learn {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: #FBFBFC;
     background-color: #19191C;
     align-items: center;
 }
 .learn__text {
     width: 539px;
+    padding: 168px 240px
+
 }
 .learn__title {
     font-size: 58px;
@@ -151,7 +187,9 @@ body {
 .learn__counters {
     display: flex;
     justify-content: space-between;
-    gap: 188px;
+    width: 539px;
+    align-items: center;
+    padding-right: 244px;
 }
 .learn__counter-number {
     font-size: 58px;
@@ -160,17 +198,23 @@ body {
 }
 .learn__counter-item {
     text-align: center;
+    padding: 0;
+    width: 179px;
     position: relative;
 }
 
 .learn__counter-item::after {
     content: "";
+    padding: 0;
     display: block;
-    width: 60px;
+    width: 150px;
     height: 2px;
     background-color: #fff;
     margin: 10px auto 0;
 }
+
+
+
 .footer__down {
     width: 100%;
     background: #19191C;
