@@ -17,15 +17,17 @@
   </a>
     <nav class="nav">
         <ul class="nav__list">
-            <li><a class="link" href="#">Courses</a></li>
+            <li><a class="link" href="#">Courses<img class="img__header" src="photo/Icon_En.png"></a></li>
             <li><a class="link" href="#">Teachers</a></li>
             <li><a class="link" href="#">Blog</a></li>
         </ul>
     </nav>
     </div>
     <div class="btn-box">
-            <li><a class="header__link" href="#">En</a></li>
-            <li><a class="header__link" href="#">Sign In</a></li>
+        <ul class="header__list">
+            <li class="header--link"><a class="header__link" href="#">En<img class="img__header" src="photo/Icon_En.png"></a></li>
+            <li class="header--link"><a class="header__link" href="#">Sign In</a></li>
+        </ul>
             <a class="header__btn" href="#">Trial free</a>
     </div>
 </header>
@@ -112,12 +114,15 @@
         </div>
     </section>
     <section class="discover">
+        <div>
        <h2 class="discover__title">
            Discover Lifelong Learning
        </h2>
+            </div>
+        <div class="discover__slider">
         <ul class="discover__list">
             <li>
-                <button class="discover__button">
+                <button class="discover__button ">
                     Popular
                 </button>
             </li>
@@ -156,7 +161,7 @@
             See more
             <img src="photo/see_more_arrow.svg" alt="see_more">
         </a>
-
+        </div>
         <div class="discover__cards">
             <article class="discover__card-item">
                 <img class="discover__card-image" src="photo/card-image-1.jpg" alt="Sales Marketing">
@@ -197,6 +202,7 @@
         </div>
     </section>
     <section class="find-program">
+        <div class="find-program__padding">
         <div class="find-program__text">
             <h2 class="find-program__title">
                 Can't find a suitable program?
@@ -212,9 +218,10 @@
                 Help me
             </button>
         </form>
+        </div>
     </section>
 </main>
-<footer class=" footer__down">
+<footer class=" container__footer footer__down">
     <div class=" footer__nav">
     <a href="index.html">
         <img src="photo/logo__footer.svg" alt="logo">
